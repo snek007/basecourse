@@ -1,0 +1,15 @@
+{
+  "course" : "Base",
+  "tasks" : {
+    "week1" : {
+      "title": "Week1",
+      "baseClasses":["week1"],
+      "testClasses":["week1","base"]
+    },
+    "arrayUtils" : {
+      "title": "Week1",
+      "baseClasses":["methods"],
+      "testClasses":["methods","base"]
+    }
+  }
+}

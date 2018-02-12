@@ -1,0 +1,5 @@
+rootProject.name = 'basecourseauto'
+
+include 'functional-tests'
+include 'student-module'
+

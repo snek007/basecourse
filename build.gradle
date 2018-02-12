@@ -1,0 +1,99 @@
+import groovy.json.JsonSlurper
+
+allprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'groovy'
+
+    sourceCompatibility = 1.8
+
+    task wrapper(type: Wrapper) {
+        gradleVersion = '4.5.1'
+    }
+
+    repositories {
+        maven { url "http://repo.maven.apache.org/maven2" }
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.11'
+    }
+
+    task copyTaskWithPatterns(type: Copy) {
+        from 'src/main/java'
+        from 'src/main/resources'
+        into 'build/classes/java/main'
+        include '**/*.txt'
+        include '**/*.js'
+        include '**/*.html'
+        include '**/*.properties'
+        include '**/*.json'
+        include '**/*.MD'
+        include '**/*.xml'
+        include '**/*.yaml'
+        exclude '**/*.java'
+    }
+
+    compileJava.dependsOn copyTaskWithPatterns
+    compileTestJava.dependsOn compileJava
+}
+
+// ./gradlew -Ptask=week1 copyTask
+task copyTask {
+    doLast {
+        def module_with_tests = "functional-tests"
+        def myModule = "student-module"
+
+        if (project.hasProperty("task")) {
+            def courseJsonObj = parseJson("${module_with_tests}/course-tasks.json")
+
+            def taskDesc = courseJsonObj.tasks[task]
+            def baseClasses = taskDesc.baseClasses;
+            def testClasses = taskDesc.testClasses;
+
+
+            for (def baseClass in baseClasses) {
+                def intoPath = "$baseClass".endsWith(".java") ?
+                        baseClass.substring(0, baseClass.lastIndexOf("/")) : baseClass
+
+                copy {
+                    from "$module_with_tests/src/main/java/$baseClass"
+                    into "$myModule/src/main/java/$intoPath"
+                }
+
+            }
+            println "The Base classes of $task have been copied into $myModule"
+
+
+            for (def testClass in testClasses) {
+                def intoPath = "$testClass".endsWith(".java") ?
+                        testClass.substring(0, testClass.lastIndexOf("/")) : testClass
+                copy {
+                    from "$module_with_tests/src/test/java/$testClass"
+                    into "$myModule/src/test/java/$intoPath"
+                }
+
+            }
+            println "The Tests classes of $task have been copied into $myModule"
+
+
+        }
+    }
+
+}
+
+task showTasks() {
+    doLast {
+        def parsed = parseJson('functional-tests/course-tasks.json')
+        def tasks = parsed.tasks;
+        for (task in tasks) {
+            println task
+        }
+    }
+}
+
+def parseJson(path) {
+    def jsonFile = file(path)
+    def parsedJson = new JsonSlurper().parseText(jsonFile.text)
+    return parsedJson
+}
