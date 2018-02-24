@@ -5,40 +5,39 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Task1Test extends ConsoleWrapperFixture {
+public class Task11Test extends ConsoleWrapperFixture {
 
     @Test
     public void main() throws Exception {
 
-        Task1.main(new String[]{"13"});
+        Task11.main(new String[]{"1"});
 
         String consoleResults = consoleOutByteArray.toString();
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);
 
-        Assert.assertThat(consoleResults, CoreMatchers.containsString("Я на работе"));
+        Assert.assertThat(consoleResults, CoreMatchers.containsString("1 копейка"));
     }
 
     @Test
     public void main2() throws Exception {
 
-        Task1.main(new String[]{"7"});
+        Task11.main(new String[]{"11"});
 
         String consoleResults = consoleOutByteArray.toString();
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);
 
-        Assert.assertThat(consoleResults, CoreMatchers.containsString("Я отдыхаю"));
+        Assert.assertThat(consoleResults, CoreMatchers.containsString("11 копеек"));
     }
 
-
     @Test
-    public void mainNeg() throws Exception {
+    public void main3() throws Exception {
 
-        Task1.main(new String[]{"-5"});
+        Task11.main(new String[]{"43"});
 
         String consoleResults = consoleOutByteArray.toString();
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);
 
-        Assert.assertThat(consoleResults, CoreMatchers.containsString("Неверное число"));
+        Assert.assertThat(consoleResults, CoreMatchers.containsString("43 копейки"));
     }
 
 }

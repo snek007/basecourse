@@ -5,9 +5,6 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by serhii on 12.02.18.
- */
 public class Task2Test extends ConsoleWrapperFixture {
     @Test
     public void main() throws Exception {

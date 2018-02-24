@@ -1,7 +1,7 @@
 package week1;
 
 /**
- * есть три числа, нужно вывести на консоль наибольшее
+ * 2. Есть три числа, нужно вывести на консоль наибольшее
  */
 public class Task2 {
 
@@ -11,5 +11,6 @@ public class Task2 {
         int c = Integer.parseInt(args[2]);
 
 
+//      Yours code...
     }
 }

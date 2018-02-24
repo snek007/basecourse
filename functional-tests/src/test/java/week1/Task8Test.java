@@ -5,31 +5,27 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertThat;
-
-
-public class Task4Test extends ConsoleWrapperFixture {
+public class Task8Test extends ConsoleWrapperFixture {
 
     @Test
     public void main() throws Exception {
 
-        Task4.main(new String[]{"3", "4", "5"});
+        Task8.main(new String[]{"950"});
 
         String consoleResults = consoleOutByteArray.toString();
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);
 
-        Assert.assertThat(consoleResults, CoreMatchers.containsString("true"));
+        Assert.assertThat(consoleResults, CoreMatchers.containsString("950"));
     }
+
     @Test
     public void main2() throws Exception {
 
-        Task4.main(new String[]{"3", "3", "5"});
+        Task8.main(new String[]{"9850"});
 
         String consoleResults = consoleOutByteArray.toString();
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);
 
-        Assert.assertThat(consoleResults, CoreMatchers.containsString("false"));
+        Assert.assertThat(consoleResults, CoreMatchers.containsString("8865"));
     }
 }
-
