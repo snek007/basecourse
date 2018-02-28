@@ -21,7 +21,7 @@ public class Task12Test extends ConsoleWrapperFixture {
     @Test
     public void main2() throws Exception {
 
-        Task12.main(new String[]{"123123"});
+        Task12.main(new String[]{"124123"});
 
         String consoleResults = consoleOutByteArray.toString();
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);

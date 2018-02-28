@@ -40,4 +40,14 @@ public class Task11Test extends ConsoleWrapperFixture {
         Assert.assertThat(consoleResults, CoreMatchers.containsString("43 копейки"));
     }
 
+    @Test
+    public void main4() throws Exception {
+
+        Task11.main(new String[]{"12"});
+
+        String consoleResults = consoleOutByteArray.toString();
+        restoreSystemOutAndPrintInterceptedMessages(consoleResults);
+
+        Assert.assertThat(consoleResults, CoreMatchers.containsString("12 копеек"));
+    }
 }

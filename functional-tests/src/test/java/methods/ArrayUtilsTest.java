@@ -1,21 +1,17 @@
 package methods;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
 
-/**
- * Created by serhii on 12.02.18.
- */
+
 public class ArrayUtilsTest {
 
     @Test
     public void generateArr() throws Exception {
 
-        int[] arr = ArrayUtils.generateArr(10);
+        int[] arr = ArrayUtils.generateArray(10);
 
         Assert.assertThat(arr, notNullValue());
         Assert.assertThat(arr.length, is(10));
