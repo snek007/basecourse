@@ -8,9 +8,6 @@ import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
-/**
- * Created by serhii on 12.02.18.
- */
 public class ConsoleWrapperFixture {
 
 

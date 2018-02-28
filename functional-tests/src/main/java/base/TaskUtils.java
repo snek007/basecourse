@@ -1,9 +1,5 @@
 package base;
 
-/**
- * @author Yevhen Vorobiei
- * @since JDK 1.8
- */
 public class TaskUtils {
 
     public static int[] arrayConverter(String[] args) {
