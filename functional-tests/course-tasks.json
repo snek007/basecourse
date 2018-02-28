@@ -6,6 +6,11 @@
       "baseClasses":["week1"],
       "testClasses":["week1","base"]
     },
+    "week2" : {
+      "title": "Week2",
+      "baseClasses":["week2","base"],
+      "testClasses":["week2","base"]
+    },
     "arrayUtils" : {
       "title": "Week1",
       "baseClasses":["methods"],
