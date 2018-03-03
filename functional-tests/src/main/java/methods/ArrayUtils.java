@@ -54,7 +54,7 @@ public class ArrayUtils {
      *
      * @param min минимальное случайно сгенерированое число, которое может присутсвовать в массиве
      *
-     * @param max максимальное случайно сгенерированое число, которое может присутсвовать в массиве
+     * @param max максимальное случайно сгенерированое число, предыдущее от которого может присутсвовать в массиве
      *
      * @return массив случайных чисел от min до max, не включительно
      *          или null, если size < 0, min >= max
@@ -74,7 +74,7 @@ public class ArrayUtils {
      *
      * @param min минимальное случайно сгенерированое число, которое может присутсвовать в массиве
      *
-     * @param max максимальное случайно сгенерированое число, которое может присутсвовать в массиве
+     * @param max максимальное случайно сгенерированое число, предыдущее от которого может присутсвовать в массиве
      *
      * @return массив случайных чисел от min до max, не включительно
      *          или null, если size < 0, min >= max
@@ -163,7 +163,7 @@ public class ArrayUtils {
      * Copies the specified range of the specified array into a new array.
      * The initial index of the range (from) must lie between zero
      * and original.length, inclusive.  The value at
-     * riginal[from] is placed into the initial element of the copy
+     * original[from] is placed into the initial element of the copy
      * (unless from == original.length or from == to).
      * Values from subsequent elements in the original array are placed into
      * subsequent elements in the copy.  The final index of the range
@@ -195,7 +195,7 @@ public class ArrayUtils {
     /**
      * Sorts the specified array into ascending numerical order.
      *
-     * <p>Implementation note: The sorting algorithm is a Bubble Sort.
+     * Implementation note: The sorting algorithm is a Bubble Sort.
      * This algorithm offers O(n^2) performance.
      *
      * @param array the array to be sorted
@@ -207,7 +207,7 @@ public class ArrayUtils {
     /**
      * Sorts the specified array into ascending numerical order.
      *
-     * <p>Implementation note: The sorting algorithm is a Select Sort.
+     * Implementation note: The sorting algorithm is a Select Sort.
      * This algorithm offers O(n^2) performance.
      *
      * @param array the array to be sorted
@@ -219,7 +219,7 @@ public class ArrayUtils {
     /**
      * Sorts the specified array into ascending numerical order.
      *
-     * <p>Implementation note: The sorting algorithm is a Insert Sort.
+     * Implementation note: The sorting algorithm is a Insert Sort.
      * This algorithm offers O(n^2) performance.
      *
      * @param array the array to be sorted

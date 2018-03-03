@@ -1,91 +1,66 @@
-0.   Video https://www.youtube.com/watch?v=fNFaGxIlWZA&list=PLvmHg49t5OCSrfmZAhXWn61rZVxwU2Ow5&index=2
-	 	   https://www.youtube.com/watch?v=ZRgR-E5OFW4&index=3&list=PLvmHg49t5OCSrfmZAhXWn61rZVxwU2Ow5
+Homework week 2
 
-1. 		
-		Math.random
-		
-		Primitive vs Reference
+Теория:
+    1. Прочитать и выучить
+        1.1. (Пройденый материал с певрого викенда)
+            Шилдт Г. "Java. Полное руководство"
+            Глава 3. Типы данных, переменные и массивы (стр. 88 - 91)
+            Глава 4. Операторы (стр. 101 - 110).
+            Глава 5. Управляющие операторы (стр. 124 - 135, 137 - 143).
+            Кей Хорстманн, Гари Корнелл - Java 2. Том 1 (ст. 90 - 94).
 
-		type convertion int -> double, double -> int, etc.
+            (можете использовать другой ресурс для изучения синтаксиса и основных конструкции)
 
-		loop(start,end,step)
-			while, do-while,for 	
+           ВИДЕО ПЕРВОГО https://www.youtube.com/watch?v=JcinAIk7dLk&index=3&list=PLvf0crXC-YPoYF0wGTYL7OoF_OYd2LgVn&t=0s
+            И ВОТОРОГО https://www.youtube.com/watch?v=zSEjrW4aoLc&list=PLvf0crXC-YPoYF0wGTYL7OoF_OYd2LgVn&index=4
+            ДНЕЙ ВТОРОЙ НЕДЕЛИ КУРСА
 
-		array
-		    	static size, indexes, one type for all cells
-			action
-				create
-				read from cell
-				write into cell 
+       1.2. (Материал для самостоятельного изучения):
 
-		method (grouping line of code)
-			location - in class
-			structure - 
-			// signature			
-			public static <type> <name>(<type> <argName>){
-				// body, actions			
-			}
+           http://developer.alexanderklimov.ru/android/java/string.php
 
-		!!!REMEMBER about creator and user
+           http://kulibaba.net/programming/java/strings
 
-	
-2. Analyze code(use debug or visualizer)
-	previous code week2_day1.txt
-	- classwork
-	- https://github.com/presly808/base6/tree/master/src/week2/day1
-	- https://github.com/presly808/base6/blob/master/src/week2/day2/FindMin.java
-	- http://www.golovachcourses.com/procedural-iteration/		
-	
-3. Do First nine task from below links !!! You can use IDEA for better understanding
-	http://codingbat.com/java/Array-1
-				    
-4. Массив создается с помощью метода в классе ArrayUtils
+           http://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 
-	1) Найти минимальное и максимальное значения в массиве и вывести их на консоль
+            (можете использовать другой ресурс для изучения синтаксиса и основных конструкции)
 
-	2) Поменять местами наибольший
-		и наименьший элементы в массиве
+           ВИДЕО ПЕРВОГО https://www.youtube.com/watch?v=IZPATDV-vU0&list=PLvf0crXC-YPoYF0wGTYL7OoF_OYd2LgVn&index=6&t=0s
+            И ВОТОРОГО https://www.youtube.com/watch?v=D1Qud2dV-QQ&list=PLvf0crXC-YPoYF0wGTYL7OoF_OYd2LgVn&index=7
+            ДНЕЙ ТРЕТЕЙ НЕДЕЛИ КУРСА
 
-	3) Заданы два массива одинаковой длинны с любыми значениями скопировать данные из первого массива во второй
-
-	4) Посчитать сколько цифр(цифра задается пользователем) в массиве
-
-	5) Заполнить массив случайными значениями. На четных индексах парные значения, на нечетных непарные
-
-	6) Найти среднее арифметическое массива
-
-	7) Вывести в консоль элементы той половины одномерного массива у которой среднее арифметическое максимальное
-
-	8) Eсть два массива одинаковой длины arr1 и arr2 вывести в консоль значения массива,
-	   который получается в результате суммы arr1[i] + arr2[i]
-
-	9) Задать два массива случайными числами от 25 до 75. Определить у какого из массивов больше парных елементов.
-
-	10) public static int[] splitArray(int[] arr, int start, int end) { // обрезать массив по границам start и end
-	}
+   2. GitHub & Git. Пройти онлайн туториал https://githowto.com/ru
 
 
-	String 
-			http://codingbat.com/doc/java-string-introduction.html
-			http://codingbat.com/doc/java-string-substring.html
+Практика:
+   1. Сделать все задания, которые лежат в пакете week2 (Task1 - Task15). Правильность выполнения проверяем с помощью тестов
+   (Task1Test - Task15Test).
 
-5. Do First nine task from below links !!! You can use IDEA for better 
-	http://codingbat.com/java/Array-2
-	http://codingbat.com/java/String-1
+   2. Написать реализацию методов класса ArrayUtils в пакете methods:
 
-6. * http://codingbat.com/java/String-2 (first 9 tasks) 
+        * generateArray
+        * findMin
+        * findMax
+        * generateRandomArray
+        * generateRandomEvenOddArray
+        * arrayToString(int[] array)
+        * arrayToString(char[] array)
+        * arrayToString(String[] array)
 
-7. *
+        Правильность выполнения проверяем с помощью тестов methods -> ArrayUtilsTest.
 
-	2.1 Инвертировать массив (без использования допольнительного массива)
+   3. Пройти Array-1 задания на сайте http://codingbat.com/java/Array-1 (как решать https://www.youtube.com/watch?v=cODLgsJMiMI&index=5&list=PLvf0crXC-YPoYF0wGTYL7OoF_OYd2LgVn)
+        (Если есть время и желание, тогда можете пройти также Array-2 и Array-3)
 
-	2.2 Проверить или является число простым
 
-	2.3 Посчитать колличество букв 'a' в строке (искомый символ может быть разным)
+Литература
+        1. Шилдт Г. "Java. Полное руководство"
+        2. Кей Хорстманн, Гари Корнелл - Java 2. Том 1
+        3. Кэти Сьерра, Берт Бейтс. "Head First Java / Изучаем Java"
+        4. Брюс Эккель. "Философия Java"
+        Качаем тут:
+        https://drive.google.com/folderview?id=0B29zsnLMOJnOMkdfLW9XbVZUVGc&usp=sharing
 
-	2.4 Сдвинуть массив на заданное количество позиций // {1,2,3,4,5} -> 2 = {4,5,1,2,3}; {1,2,3,4,5} -> 3 = {3,4,5,1,2}
-		Количество позиций и массив указывает пользователь
 
-	2.5 Заменить в строке все символы 'a' на '@' и вывести новую строку // "array is a data type" -> "@rr@y is @ d@t@ type"
+    Всем хорошей и продуктивной недели, у вас все получится!
 
-	Все получится :)
