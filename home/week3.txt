@@ -38,7 +38,6 @@ Homework week 3
                Правильность выполнения проверяем с помощью тестов methods -> ArrayUtilsTest,
                тесты написать самостоятельно.
 
-    5*. Пройти Recursion-1 задания на сайте http://codingbat.com/java/Recursion-1
 
 	Всем отличной недели!
     	Ждем вас на ООП!
