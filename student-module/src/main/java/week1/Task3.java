@@ -7,6 +7,9 @@ public class Task3 {
     public static void main(String[] args) {
         int num = Integer.parseInt(args[0]);
 
+        if (num % 7 == 0) {
+            System.out.println( num * 2);
+        }
 //      Yours code...
     }
 }

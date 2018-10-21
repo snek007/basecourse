@@ -9,7 +9,13 @@ public class Task5 {
         int metersPerSecond = Integer.parseInt(args[0]);
         int kilometersPerHour = Integer.parseInt(args[1]);
 
-//      Yours code...
+        int metersPerSecond2 = kilometersPerHour * 1000 / 3600 ;
+
+        if ( metersPerSecond > metersPerSecond2 ) {
+            System.out.println(metersPerSecond);
+        } else {
+            System.out.println(kilometersPerHour);
+        }
 
     }
 }

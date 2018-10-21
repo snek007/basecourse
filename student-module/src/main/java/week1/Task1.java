@@ -9,11 +9,11 @@ public class Task1 {
     public static void main(String[] args) {
         int time = Integer.parseInt(args[0]);
 
-        if(time < 0 || time > 24){
+        if (time < 0 || time > 24) {
             System.out.println("Неверное число");
-        } else if(time > 9 && time < 18){
-        System.out.println("Я на работе");
-    } else {
+        } else if (time > 9 && time < 18) {
+            System.out.println("Я на работе");
+        } else {
             System.out.println("Я отдыхаю");
         }
 //      Yours code...
