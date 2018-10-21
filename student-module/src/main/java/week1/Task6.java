@@ -1,5 +1,7 @@
 package week1;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 /**
  * 6. Даны три числа a, b, c. Определить, имеется ли среди них хотя бы одна пара равных.
  * Ответ вывести в виде сообщения true/false.
@@ -10,6 +12,6 @@ public class Task6 {
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
 
-//      Yours code...
+        System.out.println(a == b || b == c || a == c);
  }
 }
