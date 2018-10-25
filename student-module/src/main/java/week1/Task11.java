@@ -9,7 +9,7 @@ public class Task11 {
     public static void main(String[] args) {
         int number = Integer.parseInt(args[0]);
 
-        //      Yours code...
+//        if (number % 10 == 1 || number % 10 == )
 
     }
 }
