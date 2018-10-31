@@ -1,7 +1,7 @@
 package week2;
 
 import base.TaskUtils;
-
+import week2.utils.ArrUtils;
 /**
  * 3. Найти среднее арифметическое массива и вывести его на экран.
  * В случае, если массив == null или длинна массива == 0 - на экран вывести null или {}.

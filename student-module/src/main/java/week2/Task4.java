@@ -12,7 +12,24 @@ public class Task4 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-        //        Yours code...
+        if (array == null) {
+            System.out.println("null");
+        } else if (array.length == 0) {
+            System.out.println("{}");
+        } else {
+            int min = array[0];
+            int max = array[args.length -1];
+            for (int i = 1; i < array.length; i++) {
+                min = min < array[i] ? min : array[i];
+
+            }
+            for (int i = 0; i < array.length - 1; i++) {
+                max = max > array[i]? max : array[i];
+            }
+            System.out.print("Min = " + min);
+            System.out.print(", ");
+            System.out.print("max = " + max);
+        }
 
     }
 }

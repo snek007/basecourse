@@ -12,4 +12,12 @@ public class ArrUtils {
         System.out.print(arr[arr.length - 1]);
         System.out.print("}");
     }
+
+    public static void ifMas0OrNull(int[] arr) {
+        if (arr == null) {
+            System.out.println("null");
+        } else if (arr.length == 0) {
+            System.out.println("{}");
+        }
+    }
 }
