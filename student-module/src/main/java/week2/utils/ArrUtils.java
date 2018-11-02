@@ -54,4 +54,11 @@ public class ArrUtils {
         }
         return maxI;
     }
+
+    public static void
+    swapElements(int[] array, int maxI, int minI) {
+        int temp = array[minI];
+        array[minI] = array[maxI];
+        array[maxI] = temp;
+    }
 }

@@ -23,9 +23,7 @@ public class Task5 {
         int maxI = ArrUtils.indexOfMaxNum(array);
         int minI = ArrUtils.indexOfMinNum(array);
 
-        int temp = array[minI];
-        array[minI] = array[maxI];
-        array[maxI] = temp;
+        ArrUtils.swapElements(array, maxI, minI);
 
 
         ArrUtils.printArr(array);
