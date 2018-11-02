@@ -61,24 +61,25 @@ public class ArrUtils {
         array[maxI] = temp;
     }
 
-    public static void printPartOfMas(int[] arr, int startMas, int finalhMas) {
+    //show array in Terminal with start and end of arr[i]
+    public static void printPartOfMas(int[] arr, int startMas, int endMas) {
         System.out.print("{");
-        for (int i = startMas; i < finalhMas - 1; i++) {
+        for (int i = startMas; i < endMas - 1; i++) {
             System.out.print(arr[i] + ", ");
         }
-        System.out.print(arr[finalhMas - 1]);
+        System.out.print(arr[endMas - 1]);
         System.out.print("}");
+
     }
 
-    public  static String arrToStr (int[] arr, int left, int right){
+    //return value of array with left/right rounds of arr[i]
+    public static String arrToStr(int[] arr, int left, int right) {
         String res = "{";
-
         for (int i = left; i < right - 1; i++) {
             res += arr[i] + ", ";
         }
         res += arr[right - 1] + "}";
 
         return res;
-
     }
 }
