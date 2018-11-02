@@ -55,10 +55,30 @@ public class ArrUtils {
         return maxI;
     }
 
-    public static void
-    swapElements(int[] array, int maxI, int minI) {
+    public static void swapElements(int[] array, int maxI, int minI) {
         int temp = array[minI];
         array[minI] = array[maxI];
         array[maxI] = temp;
+    }
+
+    public static void printPartOfMas(int[] arr, int startMas, int finalhMas) {
+        System.out.print("{");
+        for (int i = startMas; i < finalhMas - 1; i++) {
+            System.out.print(arr[i] + ", ");
+        }
+        System.out.print(arr[finalhMas - 1]);
+        System.out.print("}");
+    }
+
+    public  static String arrToStr (int[] arr, int left, int right){
+        String res = "{";
+
+        for (int i = left; i < right - 1; i++) {
+            res += arr[i] + ", ";
+        }
+        res += arr[right - 1] + "}";
+
+        return res;
+
     }
 }

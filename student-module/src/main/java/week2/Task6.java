@@ -35,22 +35,14 @@ public class Task6 {
             sumSecondPart = sumSecondPart + array[i];
         }
 
-        double firstArifmMean = sumFirstPart / (array.length / 2);
-        double secondArifmMean = sumSecondPart / (array.length / 2 + step);
+        int firstArifmMean = sumFirstPart / (array.length / 2);
+        int secondArifmMean = sumSecondPart / (array.length / 2 + step);
         if (firstArifmMean > secondArifmMean) {
-            System.out.print("{");
-            for (int i = 0; i < array.length / 2 - 1; i++) {
-                System.out.print(array[i] + ", ");
-            }
-            System.out.print(array[array.length / 2 - 1]);
-            System.out.print("}");
+//            ArrUtils.printPartOfMas(array, 0, array.length / 2);
+            System.out.println(ArrUtils.arrToStr(array, 0, array.length / 2));
         } else if (firstArifmMean < secondArifmMean) {
-            System.out.print("{");
-            for (int i = array.length / 2 + step; i < array.length - 1; i++) {
-                System.out.print(array[i] + ", ");
-            }
-            System.out.print(array[array.length - 1]);
-            System.out.print("}");
+//            ArrUtils.printPartOfMas(array, array.length / 2 + step, array.length);
+            System.out.println(ArrUtils.arrToStr(array, array.length / 2 + step, array.length));
         } else {
             ArrUtils.printArr(array);
         }
