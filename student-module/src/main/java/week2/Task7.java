@@ -1,6 +1,7 @@
 package week2;
 
 import base.TaskUtils;
+import week2.utils.ArrUtils;
 
 import java.util.Arrays;
 
@@ -18,8 +19,10 @@ public class Task7 {
 
         int[] arr1 = TaskUtils.arrayConverter(Arrays.copyOfRange(args,0,  args.length / 2));
         int[] arr2 = TaskUtils.arrayConverter(Arrays.copyOfRange(args, args.length / 2,  args.length));
-
-        //        Yours code...
-
+        int[] arr3 = new int[arr1.length];
+        for (int i = 0; i < arr1.length ; i++) {
+            arr3[i] = arr1[i] + arr2[i];
+        }
+        ArrUtils.printArr(arr3);
     }
 }

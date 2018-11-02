@@ -1,6 +1,7 @@
 package week2;
 
 import base.TaskUtils;
+import week2.utils.ArrUtils;
 
 /**
  * 8. Посчитать сколько раз число 5 встречается в массиве. Результат вывести на экран (только число).
@@ -15,7 +16,20 @@ public class Task8 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-        //        Yours code...
-
+        String resArr = ArrUtils.ifMasEmptyPrint_2(array);
+        if (resArr != null) {
+            System.out.println(resArr);
+            return;
+        }
+        int num = 5;
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == num){
+                sum++;
+            }else {
+                sum = sum;
+            }
+        }
+        System.out.println(sum);
     }
 }
