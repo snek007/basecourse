@@ -1,6 +1,7 @@
 package week2;
 
 import base.TaskUtils;
+import week2.utils.ArrUtils;
 
 import java.util.Arrays;
 
@@ -19,7 +20,11 @@ public class Task6 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-        //        Yours code...
+        String resArr = ArrUtils.ifMasEmptyPrint_2(array);
+        if (resArr != null) {
+            System.out.println(resArr);
+            return;
+        }
 
     }
 }

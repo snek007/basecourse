@@ -1,6 +1,7 @@
 package week2;
 
 import base.TaskUtils;
+import week2.utils.ArrUtils;
 
 /**
  * 5. Поменять местами наибольший и наименьший элементы в массиве и вывести его на экран в виде сообщения.
@@ -14,7 +15,22 @@ public class Task5 {
 
         int[] array = TaskUtils.arrayConverter(args);
 
-        //        Yours code...
+        String resArr = ArrUtils.ifMasEmptyPrint_2(array);
+        if (resArr != null) {
+            System.out.println(resArr);
+            return;
+        }
+        int maxI = ArrUtils.indexOfMaxNum(array);
+        int minI = ArrUtils.indexOfMinNum(array);
 
+        int temp = array[minI];
+        array[minI] = array[maxI];
+        array[maxI] = temp;
+
+
+        ArrUtils.printArr(array);
     }
+
+
 }
+
