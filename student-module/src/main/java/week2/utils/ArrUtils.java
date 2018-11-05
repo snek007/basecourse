@@ -13,6 +13,14 @@ public class ArrUtils {
         System.out.print("}");
     }
 
+    // show "mas" like "x1x2x3....xn"
+    public static void siplePrintArr(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+
+        }
+    }
+
     public static boolean ifMasEmptyPrint(int[] arr) {
         if (arr == null) {
             System.out.println("null");
