@@ -11,7 +11,7 @@ import java.util.Arrays;
  *      {1,2,3,4,5} -> 2 = {4,5,1,2,3};
  *      {1,2,3,4,5} -> 3 = {3,4,5,1,2}
  */
-public class Task15 {
+public class  Task15 {
     public static void main(String[] args) {
 
         int[] array = TaskUtils.arrayConverter(Arrays.copyOfRange(args, 1, args.length));
