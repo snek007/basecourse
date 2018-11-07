@@ -21,7 +21,7 @@ public class Task15Test extends ConsoleWrapperFixture {
     @Test
     public void main2Test() throws Exception {
 
-        Task6.main(new String[]{"4", "0", "8", "-8", "1", "9", "9", "2"});
+        Task15.main(new String[]{"4", "0", "8", "-8", "1", "9", "9", "2"});
 
         String consoleResults = consoleOutByteArray.toString();
         restoreSystemOutAndPrintInterceptedMessages(consoleResults);
