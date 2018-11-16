@@ -11,6 +11,7 @@ public class ArrUtils {
         }
         System.out.print(arr[arr.length - 1]);
         System.out.print("}");
+//        System.out.println(arrToStr(arr, 0 , arr.length));
     }
 
     // show "mas" like "x1x2x3....xn"
